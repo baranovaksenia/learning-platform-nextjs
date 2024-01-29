@@ -16,8 +16,8 @@ const DashboardLayout = ({ children }: DashboardLayoutProps) => {
 			<div className="hidden md:flex h-full w-56 flex-col fixed inset-y-0 z-50">
 				<Sidebar />
 			</div>
-			{/* main content */}
-			<main className="md:pl-56 h-full">{children}</main>
+			{/* main content: push content from the left and from the top */}
+			<main className="md:pl-56 pt-[80px] h-full">{children}</main>
 		</div>
 	)
 }
